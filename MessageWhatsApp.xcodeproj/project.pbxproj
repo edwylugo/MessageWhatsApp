@@ -15,6 +15,8 @@
 		598D9532252A793E007AEE5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598D9530252A793E007AEE5E /* LaunchScreen.storyboard */; };
 		598D953D252A793E007AEE5E /* MessageWhatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D953C252A793E007AEE5E /* MessageWhatsAppTests.swift */; };
 		598D9548252A793E007AEE5E /* MessageWhatsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D9547252A793E007AEE5E /* MessageWhatsAppUITests.swift */; };
+		598D9557252A7C68007AEE5E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D9556252A7C68007AEE5E /* MainVC.swift */; };
+		598D955A252A7DD4007AEE5E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D9559252A7DD4007AEE5E /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		598D9543252A793E007AEE5E /* MessageWhatsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageWhatsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		598D9547252A793E007AEE5E /* MessageWhatsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWhatsAppUITests.swift; sourceTree = "<group>"; };
 		598D9549252A793E007AEE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		598D9556252A7C68007AEE5E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		598D9559252A7DD4007AEE5E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		598D9524252A793B007AEE5E /* MessageWhatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				598D9558252A7DC6007AEE5E /* Lib */,
+				598D9555252A7B97007AEE5E /* Controller */,
 				598D9525252A793B007AEE5E /* AppDelegate.swift */,
 				598D9527252A793B007AEE5E /* SceneDelegate.swift */,
 				598D9529252A793B007AEE5E /* ViewController.swift */,
@@ -126,6 +132,22 @@
 				598D9549252A793E007AEE5E /* Info.plist */,
 			);
 			path = MessageWhatsAppUITests;
+			sourceTree = "<group>";
+		};
+		598D9555252A7B97007AEE5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				598D9556252A7C68007AEE5E /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		598D9558252A7DC6007AEE5E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				598D9559252A7DD4007AEE5E /* UIColor.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				598D952A252A793B007AEE5E /* ViewController.swift in Sources */,
+				598D9557252A7C68007AEE5E /* MainVC.swift in Sources */,
 				598D9526252A793B007AEE5E /* AppDelegate.swift in Sources */,
 				598D9528252A793B007AEE5E /* SceneDelegate.swift in Sources */,
+				598D955A252A7DD4007AEE5E /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
