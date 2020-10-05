@@ -11,7 +11,22 @@ import UIKit
 class MainVC: UIViewController {
     
     var logo: UIImageView = .customImageView(named: "logo")
-    var sendMessage: UIButton = .customButton()
+    
+    let openWhats: UIButton = {
+        let button: UIButton = .customButton()
+        button.setTitle("Abrir Whatsapp", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 17)
+        return button
+    }()
+    
+    let sendMessage: UIButton = {
+        let button: UIButton = .customButton()
+        button.setTitle("Enviar mensagem", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 17)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +37,12 @@ class MainVC: UIViewController {
     
     func addBody() {
         
+        let stackViewButtons = UIStackView(arrangedSubviews: [UIView(), openWhats, sendMessage,UIView()])
+        stackViewButtons.distribution = .fill
+        stackViewButtons.axis = .vertical
+        stackViewButtons.spacing = 8
         
-        let stackView = UIStackView(arrangedSubviews: [UIView(), logo, sendMessage,UIView()])
+        let stackView = UIStackView(arrangedSubviews: [UIView(), logo, stackViewButtons,UIView()])
         stackView.distribution = .equalCentering
         stackView.axis = .vertical
         stackView.spacing = 16
@@ -36,5 +55,18 @@ class MainVC: UIViewController {
                                            left: 16,
                                            bottom: 0,
                                            right: 16))
+        
+        openWhats.addTarget(self, action: #selector(openWhatsAPI), for: .touchUpInside)
+        sendMessage.addTarget(self, action: #selector(openWhatsSendMessage), for: .touchUpInside)
+        
     }
+    
+    @objc func openWhatsAPI() {
+        print("Abrir função do módulo")
+    }
+    
+    @objc func openWhatsSendMessage() {
+        print("Abrir função do módulo para enviar mensagem")
+    }
+    
 }
