@@ -20,6 +20,8 @@
 		598D955D252B4388007AEE5E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D955C252B4388007AEE5E /* UIButton.swift */; };
 		598D955F252B43CF007AEE5E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D955E252B43CF007AEE5E /* UIView.swift */; };
 		598D9561252B47B4007AEE5E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D9560252B47B4007AEE5E /* UIImageView.swift */; };
+		598D95D5252B8AF0007AEE5E /* WhatsAppAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598D95D2252B8AE6007AEE5E /* WhatsAppAPI.framework */; };
+		598D95D6252B8AF0007AEE5E /* WhatsAppAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 598D95D2252B8AE6007AEE5E /* WhatsAppAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,35 @@
 			remoteGlobalIDString = 598D9521252A793B007AEE5E;
 			remoteInfo = MessageWhatsApp;
 		};
+		598D95D1252B8AE6007AEE5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 598D95CC252B8AE6007AEE5E /* WhatsAppAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 598D95A0252B827E007AEE5E;
+			remoteInfo = WhatsAppAPI;
+		};
+		598D95D3252B8AE6007AEE5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 598D95CC252B8AE6007AEE5E /* WhatsAppAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 598D95A9252B827E007AEE5E;
+			remoteInfo = WhatsAppAPITests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		598D95D7252B8AF0007AEE5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				598D95D6252B8AF0007AEE5E /* WhatsAppAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		598D9522252A793B007AEE5E /* MessageWhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageWhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +89,7 @@
 		598D955C252B4388007AEE5E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		598D955E252B43CF007AEE5E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		598D9560252B47B4007AEE5E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		598D95CC252B8AE6007AEE5E /* WhatsAppAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WhatsAppAPI.xcodeproj; path = ../../WhatsAppApi/WhatsAppAPI/WhatsAppAPI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598D95D5252B8AF0007AEE5E /* WhatsAppAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +125,7 @@
 				598D953B252A793E007AEE5E /* MessageWhatsAppTests */,
 				598D9546252A793E007AEE5E /* MessageWhatsAppUITests */,
 				598D9523252A793B007AEE5E /* Products */,
+				598D95C5252B82D2007AEE5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +142,7 @@
 		598D9524252A793B007AEE5E /* MessageWhatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				598D95CC252B8AE6007AEE5E /* WhatsAppAPI.xcodeproj */,
 				598D9558252A7DC6007AEE5E /* Lib */,
 				598D9555252A7B97007AEE5E /* Controller */,
 				598D9525252A793B007AEE5E /* AppDelegate.swift */,
@@ -159,6 +193,22 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		598D95C5252B82D2007AEE5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		598D95CD252B8AE6007AEE5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				598D95D2252B8AE6007AEE5E /* WhatsAppAPI.framework */,
+				598D95D4252B8AE6007AEE5E /* WhatsAppAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +219,7 @@
 				598D951E252A793B007AEE5E /* Sources */,
 				598D951F252A793B007AEE5E /* Frameworks */,
 				598D9520252A793B007AEE5E /* Resources */,
+				598D95D7252B8AF0007AEE5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +300,12 @@
 			mainGroup = 598D9519252A793B007AEE5E;
 			productRefGroup = 598D9523252A793B007AEE5E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 598D95CD252B8AE6007AEE5E /* Products */;
+					ProjectRef = 598D95CC252B8AE6007AEE5E /* WhatsAppAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				598D9521252A793B007AEE5E /* MessageWhatsApp */,
@@ -257,6 +314,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		598D95D2252B8AE6007AEE5E /* WhatsAppAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WhatsAppAPI.framework;
+			remoteRef = 598D95D1252B8AE6007AEE5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		598D95D4252B8AE6007AEE5E /* WhatsAppAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WhatsAppAPITests.xctest;
+			remoteRef = 598D95D3252B8AE6007AEE5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		598D9520252A793B007AEE5E /* Resources */ = {
